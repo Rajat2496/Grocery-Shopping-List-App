@@ -1,0 +1,32 @@
+<div class="details-page" ng-controller="detailsController">
+	<ul class="details-list">
+		<li>Restaurant name &#58; {{ Restaurant.name }} </li>
+		<li>Location &#58; {{ Restaurant.location }} </li>
+		<li>Recomended for &#58; {{ Restaurant.recommended_for }} </li>
+		<li>Meal for 2 &#58; {{ Restaurant.meal_for_two }} </li>
+		<li>Best for &#58; {{ Restaurant.favourites.dish_name }} </li>
+		<li>Rating &#58; {{ Restaurant.rating }} &nbsp; <i class="fa fa-star-o"></i> </li>
+		<div ng-if="Restaurant.favourites.url">
+			<li> <button class="ingredients-button" type="button" ng-show="Restaurant.favourites" ng-click="showDishDetails(Restaurant.favourites.url)" > Get Ingredients </button> </li><br>
+		</div>
+		<div class="veg-non-veg">
+			<div class="dish-veg" ng-if="vegDish">
+				<div class="dish-veg-circle">
+					<img src="images/veg-non-veg/veg.svg">
+				</div>
+			</div>
+			<div class="dish-non-veg" ng-if="nonVegDish">
+				<div class="dish-non-veg-circle">
+					<img src="images/veg-non-veg/nonveg.svg">
+				</div>
+			</div>
+		</div>
+	</ul>
+	<div ng-if="ingredients">
+		<ul>
+		<li class="ingredients-list" ng-repeat="ingredient in ingredients">
+		{{ingredient}}
+		</li>
+		</ul>
+</div>
+</div>
