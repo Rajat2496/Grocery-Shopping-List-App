@@ -1,0 +1,160 @@
+body{
+	background-image: url(1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+	font-family: 'Belgrano';
+}
+
+button{
+	font-family: 'Belgrano';
+}
+
+input{
+	font-family: 'Belgrano';
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.header-name{
+	text-align: center;
+	text-decoration: underline;
+	padding-top: 90px;
+	color: #0F110C;
+}
+@media screen and (max-width: 720px){
+	.header-name{
+		padding-top: 20px;
+	}
+}
+
+.loginForm{
+	text-align: center;
+}
+
+.loginForm input{
+	font-weight: 800;
+	width: 300px;
+}
+
+.loginForm input:hover, .loginForm input:focus{
+	background-color: #D4DCFF;
+}
+
+.loginForm button{
+	height: 40px;
+	font-size: 25px;
+	font-weight: 800;
+}
+
+.validationError{
+	color: #3C1518;
+	font-size: 20px;
+	font-weight: 800;
+}
+
+.main-content{
+	text-align: center;
+}
+
+.main-content h1{
+	text-decoration: underline;
+	padding-top: 20px;
+	padding-bottom: 50px;
+}
+
+.list{
+	display: inline-block;
+	color: #272932;
+	margin: 20px;
+	font-size: 25px;
+	list-style: none;
+}
+
+.main-content input{
+	float: right;
+	margin-right: 20px;
+	height: 30px;
+}
+
+.main-content input:focus, .main-content input:hover{
+	background-color: #D4DCFF;
+}
+
+.restaurant-name{
+	color: #000;
+	text-decoration: none;
+}
+
+.restaurant-name:hover{
+	color: #3A405A;
+	text-decoration: underline;
+	font-weight: 900;
+}
+
+.restaurant-location{
+	color: #000;
+	text-align: center;
+}
+
+.restaurant-rating{
+	color: #000;
+}
+
+.details-list{
+	text-align: justify;
+	list-style: none;
+	padding-top: 20px;
+	font-size: 25px;
+	font-weight: 800;
+	margin: 0 auto;
+}
+
+.details-list li{
+	margin-bottom: 10px;
+	padding-top: 20px;
+	padding-left: 100px;
+}
+@media screen and (max-width: 720px) {
+    .details-list li {
+					text-align: left;
+					padding-left: 2px;
+					padding-right: 15px;
+    }
+}
+
+.ingredients-button{
+	height: 50px;
+	font-size: 20px;
+	font-weight: 800;
+}
+
+.ingredients-button:hover{
+	cursor: pointer;
+	color: #685044;
+}
+
+.ingredients-list{
+	display: inline-table;
+	border: 1px solid #000;
+	text-transform: capitalize;
+	margin: 3px;
+	font-size: 20px;
+	font-weight: 900;
+	background: #4D243D;
+	color: #ECDCC9;
+	padding: 10px;
+	display: none;
+}
+
+.veg-non-veg{
+	float: left;
+	padding-left: 120px;
+}
+@media screen and (max-width: 720px){
+	.veg-non-veg{
+		padding-left: 20px;
+		padding-bottom: 20px;
+		margin: 0 auto;
+	}
+}
